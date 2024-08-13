@@ -1,0 +1,134 @@
+html {
+    background-color: whitesmoke;
+
+    h1 {
+        color: black;
+    }
+    h2 {
+        color: black;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    h3 {
+        color: black;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    p {
+        color: grey;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    a {
+        color: black;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-decoration: none;
+        font-size: larger;
+    }
+    ul {
+        list-style: none;
+    }
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    z-index: 4;
+}
+.background {
+    /* The image used */
+    background-image: url("images/Adnan-Concert.jpg");
+
+  /* Add the blur effect */
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+
+  /* Full height */
+    height: 100%;
+    min-height: 500px;
+    max-height: 500px;
+
+  /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    z-index: 5;
+
+    margin-left: auto;
+    margin-right: 25px;
+}
+.content {
+    display: flex;
+    width: 100%;
+}
+.containshit {
+    display: flex;
+    width: 100%;
+    position: absolute;
+
+    flex-direction: row-reverse;
+    z-index: 6;
+}
+
+.right {
+    display: flex;
+    width: 80%;
+    
+    padding: 0.5%;
+}
+.profile {
+    width: 80%;
+    height: 102%;
+    
+    background-size: contain;
+
+    background-position: center;
+    animation: slideShow 15s infinite;
+    margin-left: 10px;
+    border-radius: 20px;
+    border-color: white;
+}
+
+@keyframes slideShow {
+    0% { background-image: url('images/JDCC paper Chasers.jpg');}
+    20% { background-image: url('images/Adnan-Concert.jpg'); }
+    40%{ background-image: url('images/Adnan-FastAndYoungCover.jpg'); }
+    60% { background-image: url('images/AboutAdnan.JPG'); }
+    80% { background-image: url('images/Adnan-Cigar.jpg'); }
+    100% { background-image: url('images/JDCC paper Chasers.jpg');}
+}
+
+.contentRow {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: auto;
+
+}
+.linkItem {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 80%;
+    margin: 0.5%;
+    padding: 5px;
+    border-radius: 25px;
+
+}
+.info {
+    margin: 1%;
+    border-radius: 15px;
+    font-size: medium;
+    padding: 1%;
+    color: rgb(225, 225, 225);   
+    width: 100%;  
+}
+.infoLeft {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.contentImg {
+    width: 30%;
+    margin-left: auto;
+    border-radius: 15px;
+    object-fit: contain;
+    margin-bottom: auto;
+}

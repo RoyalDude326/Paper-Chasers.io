@@ -1,0 +1,97 @@
+html {
+    background-color: whitesmoke;
+
+    h1 {
+        color: black;
+    }
+    h2 {
+        color: black;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    h3 {
+        color: black;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    p {
+        color: grey;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    a {
+        color: black;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-decoration: none;
+        font-size: larger;
+    }
+    ul {
+        list-style: none;
+    }
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+.content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.right {
+    display: flex;
+    width: 80%;
+    
+    padding: 0.5%;
+}
+.profile {
+    width: 100%;
+    height: 100%;
+    
+    background-size: contain;
+
+    background-position: center;
+    animation: slideShow 15s infinite;
+    margin-left: auto;
+    border-radius: 20px;
+}
+
+@keyframes slideShow {
+    0% { background-image: url('images/JDCC paper Chasers.jpg');}
+    25% { background-image: url('images/Adnan-Concert.jpg'); }
+    50%{ background-image: url('images/Adnan-FastAndYoungCover.jpg'); }
+    75% { background-image: url('images/AboutAdnan.JPG'); }
+    100% { background-image: url('images/Adnan-Cigar.jpg'); }
+}
+.contentRow {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: auto;
+}
+.linkItem {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0.5%;
+    padding: 5px;
+    border-radius: 25px;
+
+}
+.info {
+    margin: 1%;
+    border-radius: 15px;
+    font-size: medium;
+    padding: 1%;
+    color: rgb(50, 50, 50);
+
+    display: flex;     
+}
+.infoLeft {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.contentImg {
+    width: 90%;
+    border-radius: 15px;
+    object-fit: contain;
+}

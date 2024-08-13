@@ -1,0 +1,163 @@
+html {
+    background-color: whitesmoke;
+}
+h1 {
+    color: black;
+}
+h2 {
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h3 {
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+p {
+    color: grey;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+a {
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+    font-size: larger;
+}
+ul {
+    list-style: none;
+}
+body {
+    background-color: rgba(25, 25, 25, 0.863);
+    
+}
+.Title {
+    margin-left: 2%;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.contentRow {
+    display: flex;
+    width: 100%;
+    height: auto; 
+    margin-left: 1%;
+}
+.profiles {
+    display: flex;
+    width: 100%;
+    height: auto; 
+}
+.contentItem {
+    display: flex;
+    width: 97%;
+    margin: 0.5%;
+    padding: 5px;
+    border-radius: 25px;
+    border: 2px solid rgba(0, 0, 0, 0.84);
+}
+.info {
+    background-color: rgba(254, 254, 254, 0.66);
+    margin: 1%;
+    border-radius: 15px;
+    width: 70%;
+
+    display: flex;
+}
+.infoLeft {
+    display: flex;
+    flex-direction: column;
+    
+}
+.feature {
+    width: 33%;
+    height: 60%;
+    margin: 0.5%;
+
+    align-items: left;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+} 
+.featureImg {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5%;
+    object-fit: contain;
+    background-color: rgba(188, 187, 187, 0.406);
+}
+.featureTitle {
+    margin-left: 10px;
+    color: rgb(143, 143, 143);
+}
+.contentColumn {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.contentRowSmall {
+    width: 99%;
+    display: flex;
+    flex-direction: row;
+}
+.featuredAlbum {
+    width: 100%;
+    height: 200px;
+}
+.albumImg {
+    width: 70%;
+    margin-left: 5%;
+    margin-top: 5%;
+    object-fit: contain;
+}
+.blueLine {
+    height: 5px;
+    background-color: rgb(0, 0, 63);
+}
+.concertItems {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+}
+.concertItem {
+    margin: 0.5%;
+    margin-left: 3%;
+    margin-right: 0%;
+    display: flex;
+    width: 45%;
+    height: 350px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+          
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    align-items: last baseline;
+    justify-content: center;
+}
+.artistInfo {
+    background-color: rgba(211, 211, 224, 0.523);
+    color: rgb(23, 22, 22);
+    padding: 1%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.itemTitle {
+    margin-left: 15px;
+    color: black;
+}
+.itemPar {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: rgb(18, 18, 18);
+}
+.nicknameHolder {
+    width: 200px;
+    margin-top: auto;
+    margin-bottom: 2%;
+    margin-left: 3%;
+}
+.nickname {
+    font-size: medium;
+}

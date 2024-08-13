@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<head>
+    <title>Paper Chaser</title>
+    <link rel="stylesheet" media="screen and (max-width: 1000px)" href="shopMobile.css">
+    <link rel="stylesheet" media="screen and (min-width: 1000px)" href="shop.css">
+
+    <link rel="stylesheet" media="screen and (max-width: 1000px)" href="headerAndFooterMobile.css">
+    <link rel="stylesheet" media="screen and (min-width: 1000px)" href="headerAndFooter.css">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="images/placeholderImg.jpg">
+
+        <div class="right">
+            <div class="Title">
+                <h1>Paper Chasers Ltd.</h1>
+                <h1 class="subTitle">Shop</h1>
+            </div>
+            <div class="nav">
+                <ul class="navHolder1">
+                    <li><a class="navigation1" href="main.html">Home</a></li>
+                    <li><a class="navigation1" href="music.html">Music</a></li>
+                    <li><a class="navigation1" href="shop.html">Shop</a></li>
+                </ul>
+                <ul class="navHolder1">
+                    <li><a class="navigation1" href="adnan.html">Adnan</a></li>
+                    <li><a class="navigation1" href="chris.html">Sai</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="whiteLine"></div>
+
+
+    <div class="content">
+        <div class="contentLeft">
+            <div class = 'product'>
+                <div class="prodLeft" style="background-image: url('images/s.jpg');">
+                    <h2 class="productName">
+                        Product Name
+                    </h2>
+                </div>
+                <div class="slideshow-container" id="01">
+                    <ul class="slides">
+                        <div class="slide" style="background-image: url('images/s1.jpg');"></div>
+                        <div class="slide" style="background-image: url('images/s2.jpg');"></div>
+                        <div class="slide" style="background-image: url('images/s3.jpg');"></div>
+                        <div class="slide" style="background-image: url('images/s4.JPG');"></div>
+                    </ul>
+                
+                    <button class="prev" onclick="changeSlide('01' , -1)"> &#10094;</button>
+                    <button class="next" onclick="changeSlide('01' , 1)">  &#10095;</button>
+                </div>
+            </div>
+            <div class = 'product'>
+                <div class="prodLeft" style="background-image: url('images/s.jpg');">
+                    <h2 class="productName">
+                        Product Name
+                    </h2>
+                </div>
+                <div class="slideshow-container" id="02">
+                    <ul class="slides">
+                        <div class="slide" style="background-image: url('images/s1.jpg');"></div>
+                        <div class="slide" style="background-image: url('images/s2.jpg');"></div>
+                        <div class="slide" style="background-image: url('images/s3.jpg');"></div>
+                        <div class="slide" style="background-image: url('images/s4.JPG');"></div>
+                    </ul>
+                
+                    <button class="prev" onclick="changeSlide('02' , -1)"">&#10094;</button>
+                    <button class="next" onclick="changeSlide('02' , 1)">&#10095;</button>
+                </div>
+            </div>
+    
+            <script>
+                // Define slideIndex object to store slide indexes for each slideshow
+                const slideIndex = {
+                    '01': 0,
+                    '02': 0
+                };
+            
+                function showSlides(slideshowId, slideIndex) {
+                    const slideshow = document.getElementById(slideshowId);
+                    const slides = slideshow.getElementsByClassName("slide");
+            
+                    // Hide all slides
+                    for (let i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+            
+                    // Display the initial slide
+                    slides[slideIndex].style.display = "flex";
+                }
+            
+                function changeSlide(slideshowId, n) {
+                    slideIndex[slideshowId] += n; // Increment slide index by n
+            
+                    const slideshow = document.getElementById(slideshowId);
+                    const slides = slideshow.getElementsByClassName("slide");
+            
+                    // Wrap around the slides if index goes out of bounds
+                    if (slideIndex[slideshowId] >= slides.length) {
+                        slideIndex[slideshowId] = 0;
+                    }
+                    if (slideIndex[slideshowId] < 0) {
+                        slideIndex[slideshowId] = slides.length - 1;
+                    }
+            
+                    // Hide all slides
+                    for (let i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+            
+                    // Display the current slide
+                    slides[slideIndex[slideshowId]].style.display = "flex";
+                }
+            
+                // Show the first slide of each slideshow on page load
+                showSlides("01", slideIndex['01']);
+                showSlides("02", slideIndex['02']);
+            </script>
+        </div>
+        <div class="contentRight">
+            <div class="orderCounter">
+                <h1 class="counter"> 0 / 30 of this order are claimed</h1>
+                <h1 class="counter"> Dont Miss This Order Or You'll Have To Wait </h1>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footerItem">
+            <h1>Navigation</h1>
+            <ul class="footerLinks">
+                <li class="footLink"><a href="main.html">Home</a></li>
+                <li class="footLink"><a href="music.html">Music</a></li>
+                <li class="footLink"><a href="shop.html">Shop</a></li> 
+                <li class="footLink"><a href="adnan.html">Adnan</a></li>
+                <li class="footLink"><a href="chris.html">Sai</a></li> 
+            </ul>
+        </div>
+        <div class="footerItem">
+            <h1>Contact Us</h1>
+            <ul class="footerInfo">
+                <li><p class="line">Paper Chaser Web Development</p></li>
+                <li><p class="line">250-222-2222</p></li>
+                <li><p class="line">firstlast@email.com</p></li>
+                
+            </ul>
+        </div>
+    </footer>
+</body>
