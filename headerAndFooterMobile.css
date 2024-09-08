@@ -47,6 +47,7 @@ header {
     margin-bottom: 1%;
     margin-top: 1%;
     object-fit: contain;
+    padding-left: 10px;
 } 
 .right {
     display: flex;

@@ -29,112 +29,96 @@ html {
 
 body {
     width: 100%;
-    header {
-        background-color: rgb(20, 5, 53);
-        display: flex;
-
-        .logo {
-            width: 15%;
-            margin-bottom: 1%;
-            margin-top: 1%;
-            object-fit: contain;
-        }
-
-        .right {
-            display: flex;
-            flex-direction: row;
-            margin-left: auto;
-            
-            .Title {
-                width: 550px;
-                padding: 20px;
-                margin-left: 20px;
-                .subTitle {
-                    margin-left: 20px;
-                }
-            }
-
-            .nav {
-                display: flex;
-                flex-direction: column;
-                margin-left: auto;
-                margin-right: 10%;
-                margin-top: 20px;
-
-                .navHolder1 {
-                    display: flex;
-                    .navigation1 {
-                        display: flex;
-                        margin: 1%;
-                        margin-left: 30px;
-                        padding-left: 10px;
-                        border-left: 2px solid white;
-                    }
-                    .navigation1:hover {
-                        border-left: 2px solid red;
-                    }
-                }
-                .navHolder2 {
-                    display: flex;
-                    margin-left: 2%;
-                    margin-left: 20px;
-                    .navigation2 {
-                        display: flex;
-                        margin: 1%;
-                        margin-left: 20px;
-                        width: 100px;
-                        padding-left: 10px;
-                        border-left: 2px solid white;
-                    }
-                    .navigation2:hover {
-                        border-left: 2px solid red;
-                    }
-                }
-            }
-        }
-    }
-    .whiteLine {
-        height: 2px;
-        background-color: whitesmoke;
-    }
-
-    footer {
-        display: flex;
-        background-color: rgba(0, 0, 0, 0.895);
-
-        .footerItem {
-            display: flex;
-            flex-direction: column;
-            height: fit-content;
-            margin: 10px;
-            margin-left: 20px;
-            margin-right: 50px;
-            padding-left: 15px;
-            border-left: 4px solid rgba(255, 255, 255, 0.457);
-
-            .footerLinks {
-                .footLink {
-                    margin-bottom: 15px;
-                }
-            }
-        }
-        .socials {
-            display: flex;
-            flex-direction: column;
-            margin: 10px;
-            margin-left: auto;
-            
-            
-            .socialLink {
-                margin: 5px;
-                width: 50px;
-                object-fit: contain;
-            }
-        }
-
-    }
-
-
-
-
+}
+header {
+    background-color: rgb(20, 5, 53);
+    display: flex;  
+}
+.logo {
+    width: 15%;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    object-fit: contain;
+    padding-left: 20px;
+}
+.right {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto; 
+}
+.Title {
+    width: 550px;
+    padding: 20px;
+    margin-left: 20px;
+}
+.subTitle {
+    margin-left: 20px;
+}
+.nav {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: 10%;
+    margin-top: 20px;
+}
+.navHolder1 {
+    display: flex;  
+}
+.navigation1 {
+    display: flex;
+    margin: 1%;
+    margin-left: 30px;
+    padding-left: 10px;
+    border-left: 2px solid white;
+}
+.navigation1:hover {
+    border-left: 2px solid red;
+}
+.navHolder2 {
+    display: flex;
+    margin-left: 2%;
+    margin-left: 20px;  
+}
+.navigation2 {
+    display: flex;
+    margin: 1%;
+    margin-left: 20px;
+    width: 100px;
+    padding-left: 10px;
+    border-left: 2px solid white;
+}
+.navigation2:hover {
+    border-left: 2px solid red;
+}
+.whiteLine {
+    height: 2px;
+    background-color: whitesmoke;
+} 
+footer {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.895);  
+}
+.footerItem {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    margin: 10px;
+    margin-left: 20px;
+    margin-right: 50px;
+    padding-left: 15px;
+    border-left: 4px solid rgba(255, 255, 255, 0.457);  
+}
+.footLink {
+    margin-bottom: 15px;
+}
+.socials {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    margin-left: auto;   
+}
+.socialLink {
+    margin: 5px;
+    width: 50px;
+    object-fit: contain;
 }

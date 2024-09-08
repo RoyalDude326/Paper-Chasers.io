@@ -105,3 +105,16 @@ body {
     object-fit: contain;
     margin-bottom: auto;
 }
+
+.textInfo {
+    width: 70%;
+}
+.description {
+    width: 100%;
+    font-size: x-large;
+    margin-left: 2%;
+    color: rgb(35, 35, 35);
+    background-color: rgba(220, 220, 220, 0.457);
+    padding: 2%;
+    border-radius: 25px;
+}

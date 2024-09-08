@@ -57,6 +57,7 @@ body {
 .content {
     display: flex;
     width: 100%;
+    height: 550px;
 }
 .containshit {
     display: flex;
@@ -66,16 +67,27 @@ body {
     flex-direction: row-reverse;
     z-index: 6;
 }
-
-.right {
-    display: flex;
+.textInfo {
+    width: 35%;
+}
+.description {
     width: 80%;
+    margin-left: 2%;
+    color: rgb(35, 35, 35);
+    background-color: rgba(220, 220, 220, 0.457);
+    padding: 2%;
+    border-radius: 25px;
+}
+
+.right-content {
+    display: flex;
+    width: 40%;
     
     padding: 0.5%;
 }
 .profile {
-    width: 80%;
-    height: 102%;
+    width: 100%;
+    height: 95%;
     
     background-size: contain;
 

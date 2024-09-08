@@ -83,3 +83,7 @@ body {
     height: 5px;
     background-color: rgb(0, 0, 63);
 }
+.description {
+    width: 80%;
+    font-size: medium;
+}
