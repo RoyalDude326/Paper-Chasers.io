@@ -81,47 +81,78 @@ body {
 
 .right-content {
     display: flex;
-    width: 40%;
-    
-    padding: 0.5%;
-}
-.profile {
-    width: 100%;
-    height: 95%;
-    
-    background-size: contain;
-
-    background-position: center;
-    animation: slideShow 15s infinite;
-    margin-left: 10px;
-    border-radius: 20px;
-    border-color: white;
-}
-
-@keyframes slideShow {
-    0% { background-image: url('images/JDCC paper Chasers.jpg');}
-    20% { background-image: url('images/Adnan-Concert.jpg'); }
-    40%{ background-image: url('images/Adnan-FastAndYoungCover.jpg'); }
-    60% { background-image: url('images/AboutAdnan.JPG'); }
-    80% { background-image: url('images/Adnan-Cigar.jpg'); }
-    100% { background-image: url('images/JDCC paper Chasers.jpg');}
-}
-
-.contentRow {
-    display: flex;
     flex-direction: column;
     width: 40%;
-    height: auto;
+    padding: 0.5%;
+}
 
+.entryHead {
+    color: black;
+}
+
+.entryItem {
+    background-color: rgba(95, 95, 95, 0.847);
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 20px;
+
+    height: 80px;
+}
+.entryImg {
+    height: 100%;
+    display: flex;
+    margin-right: auto;
+}
+.song_title {
+    margin-right: auto;
+}
+.keepRight {
+    margin-left: auto;
+    margin-right: 2%;
+}
+
+
+.container {
+    display: flexbox;
+    width: 40%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contentRow {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+}
+.link_img {
+    display: flex;
+    width: 30%;
+    height: fit-content;
+    justify-content: center;
+    margin-left: 35%;
+    border-radius: 15px;
 }
 .linkItem {
     display: flex;
     flex-direction: row-reverse;
-    width: 80%;
+    width: fit-content;
     margin: 0.5%;
-    padding: 5px;
-    border-radius: 25px;
-
+    padding: 8px;
+    background-color: rgba(86, 86, 86, 0.5);
+    border-radius: 20px;
+    
+}
+.intro {
+    color: white;
+    margin: 5%;
+    
 }
 .info {
     margin: 1%;
@@ -136,9 +167,8 @@ body {
     flex-direction: column;
     
 }
-
 .contentImg {
-    width: 30%;
+    width: 30px;
     margin-left: auto;
     border-radius: 15px;
     object-fit: contain;
