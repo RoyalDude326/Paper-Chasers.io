@@ -3,23 +3,18 @@ html {
 
     h1 {
         color: whitesmoke;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: larger;
     }
     h2 {
         color: whitesmoke;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: larger;
     }
     h3 {
         color: whitesmoke;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: larger;
     }
     p {
         color: whitesmoke;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: larger;
     }
     a {
         color: whitesmoke;
@@ -29,71 +24,85 @@ html {
     }
     ul {
         list-style: none;
-        font-size: larger;
     }
 }
 
 body {
     width: 100%;
-    
 }
 header {
-    width: 100%;
-    background-color: rgb(20, 5, 53);
-    display: flex;
-} 
+    background-color: rgb(0, 0, 0);
+    display: flex;  
+}
 .logo {
-    width: 35%;
+    width: 22%;
     margin-bottom: 1%;
     margin-top: 1%;
     object-fit: contain;
-    padding-left: 10px;
-} 
+    padding-left: 20px;
+}
 .right {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
+    margin-left: auto; 
+    margin-left: 1%;
 }
 .Title {
-    width: 50%;
-    min-width: 300px;
+    width: 550px;
     padding: 20px;
     margin-left: 20px;
-    font-size: xx-large;
+}
+.TitleTop {
+    display: flex;
+    flex-direction: row;
+}
+.subTitle {
+    margin-left: 20px;
 }
 .nav {
     display: flex;
     flex-direction: column;
-    margin-left: 20px;
-    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: 40%;
+    margin-top: 20px;
 }
 .navHolder1 {
-    display: flex;
-    
+    display: flex; 
 }
 .navigation1 {
     display: flex;
     margin: 1%;
-    margin-left: 20px;
-    width: 50%;
-    padding-left: 10px;
+    margin-left: 30px;
+    padding-left: 5px;
+    min-width: 80px;
     border-left: 2px solid white;
-    font-size: xx-large;
 }
 .navigation1:hover {
+    border-left: 2px solid red;
+}
+.navHolder2 {
+    display: flex;
+    margin-left: 2%;
+    margin-left: 20px;  
+}
+.navigation2 {
+    display: flex;
+    margin: 1%;
+    margin-left: 20px;
+    width: 100px;
+    padding-left: 10px;
+    border-left: 2px solid white;
+}
+.navigation2:hover {
     border-left: 2px solid red;
 }
 .whiteLine {
     height: 2px;
     background-color: whitesmoke;
-}
+} 
 footer {
     display: flex;
-    flex-direction: column;
-
-    background-color: rgba(35, 20, 20, 0.966);
-}
-.title {
-    font-size: xx-large;
+    background-color: rgba(0, 0, 0);  
 }
 .footerItem {
     display: flex;
@@ -103,9 +112,19 @@ footer {
     margin-left: 20px;
     margin-right: 50px;
     padding-left: 15px;
-    border-left: 4px solid black;  
+    border-left: 4px solid rgba(7, 0, 0, 0.457);  
 }
 .footLink {
     margin-bottom: 15px;
-    font-size: xx-large;
+}
+.socials {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    margin-left: auto;   
+}
+.socialLink {
+    margin: 5px;
+    width: 50px;
+    object-fit: contain;
 }
