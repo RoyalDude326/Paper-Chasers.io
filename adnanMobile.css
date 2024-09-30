@@ -36,12 +36,12 @@ body {
     background-image: url("images/Adnan-Concert.jpg");
 
   /* Add the blur effect */
-    filter: blur(10px);
-    -webkit-filter: blur(10px);
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
 
-  /* Full height */
-    height: 100%;
-    min-height: 1200px;
+  /* Full height */;
+    width: 100%;
+    height: fit-content;
 
   /* Center and scale the image nicely */
     background-position: center;
@@ -52,42 +52,138 @@ body {
 
     margin-left: auto;
     margin-right: 25px;
+    margin-left: 1%;
 }
 .content {
     display: flex;
     width: 100%;
+    height: 550px;
 }
 .containshit {
     display: flex;
     width: 100%;
     position: absolute;
 
-    flex-direction: row-reverse;
+    flex-direction: column-reverse;
     z-index: 6;
 }
+.textInfo {
+    width: 100%;
+}
+.description {
+    width: 80%;
+    margin-left: 2%;
+    color: rgb(35, 35, 35);
+    background-color: rgba(220, 220, 220, 0.457);
+    padding: 2%;
+    border-radius: 25px;
+}
 
-.contentRow {
+.right-content {
     display: flex;
     flex-direction: column;
-    width: 95%;
-    height: auto;
+    width: 100%;
+    padding: 0.5%;
+    margin-top: 100px;
+}
 
+.entryHead {
+    color: black;
+    margin: 1.5%;
+}
+.entrySub {
+    margin: 1%;
+}
+
+.containColumn {
+    width: 98%;
+    justify-content: center;
+
+}
+
+.entryItem {
+    background-color: rgba(95, 95, 95, 0.847);
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 20px;
+    height: 80px;
+    width: 95%;
+
+    margin-top: 1%;
+}
+.entryImg {
+    height: 100%;
+    display: flex;
+    margin-right: auto;
+}
+.song_title {
+    margin-right: auto;
+}
+.keepRight {
+    margin-left: auto;
+    margin-right: 2%;
+}
+
+.container {
+    display: flexbox;
+    width: 98%;
+    flex-direction: column;
+    margin-top: 4%;
+
+    justify-content: center;
+    align-items: center;
+}
+.feature_vid {
+    width: 90%;
+
+    height: 450px;
+    border-radius: 20px;
+    margin-left: 5%;
+    margin-top: 10%;
+
+}
+.contentRow {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+}
+.link_img {
+    display: flex;
+    width: 30%;
+    height: fit-content;
+    justify-content: center;
+    margin-left: 35%;
+    border-radius: 15px;
 }
 .linkItem {
     display: flex;
     flex-direction: row-reverse;
-    width: 50%;
-    margin: 2%;
-    padding: 5px;
-    border-radius: 25px;
-    margin-left: auto;
-    margin-right: 40px;
-
+    width: fit-content;
+    margin: 0.5%;
+    padding: 8px;
+    border: 2px;
+    background-color: rgba(86, 86, 86, 0.5);
+    border-radius: 20px;
+    
+}
+.intro {
+    color: white;
+    margin: 5%;
+    width: 60%;
+    margin-left: 20%;
+    font-size: 25px;
 }
 .info {
     margin: 1%;
     border-radius: 15px;
-    font-size: xx-large;
+    font-size: medium;
     padding: 1%;
     color: rgb(225, 225, 225);   
     width: 100%;  
@@ -97,24 +193,14 @@ body {
     flex-direction: column;
     
 }
-
 .contentImg {
-    width: 30%;
+    width: 70px;
     margin-left: auto;
     border-radius: 15px;
     object-fit: contain;
     margin-bottom: auto;
 }
-
-.textInfo {
-    width: 70%;
-}
-.description {
-    width: 100%;
-    font-size: x-large;
-    margin-left: 2%;
-    color: rgb(35, 35, 35);
-    background-color: rgba(220, 220, 220, 0.457);
-    padding: 2%;
-    border-radius: 25px;
+.footer {
+    margin-top: 1800px;
+    background-color: black;
 }

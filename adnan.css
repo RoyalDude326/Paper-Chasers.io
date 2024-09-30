@@ -53,6 +53,7 @@ body {
 
     margin-left: auto;
     margin-right: 25px;
+    margin-left: 1%;
 }
 .content {
     display: flex;
@@ -68,7 +69,7 @@ body {
     z-index: 6;
 }
 .textInfo {
-    width: 35%;
+    width: 100%;
 }
 .description {
     width: 80%;
@@ -82,12 +83,22 @@ body {
 .right-content {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 100%;
     padding: 0.5%;
 }
 
 .entryHead {
     color: black;
+    margin: 1.5%;
+}
+.entrySub {
+    margin: 1%;
+}
+
+.containColumn {
+    width: 33%;
+    justify-content: center;
+
 }
 
 .entryItem {
@@ -99,8 +110,10 @@ body {
     align-items: center;
 
     border-radius: 20px;
-
     height: 80px;
+    width: 95%;
+
+    margin-top: 1%;
 }
 .entryImg {
     height: 100%;
@@ -115,13 +128,23 @@ body {
     margin-right: 2%;
 }
 
-
 .container {
     display: flexbox;
-    width: 40%;
+    width: 98%;
     flex-direction: column;
+    margin-top: 4%;
+
     justify-content: center;
     align-items: center;
+}
+.feature_vid {
+    width: 90%;
+
+    height: 90%;
+    border-radius: 20px;
+    margin-left: 5%;
+    margin-top: 10%;
+
 }
 .contentRow {
     display: flex;
