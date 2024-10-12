@@ -1,5 +1,5 @@
 html {
-    background-color: rgb(0, 0, 0);
+    background-color: whitesmoke;
 
     h1 {
         color: black;
@@ -48,52 +48,44 @@ body {
     background-size: cover;
 
     z-index: 5;
-
 }
 .content {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 800px;
 }    
 .contentRow {
     display: flex;
-    flex-direction: column;
     width: 100%;
     height: auto;
     min-height: 300px;
     position: absolute;
     z-index: 6;
-    justify-content: center;
 }
-.contentRowIn {
-    display: flex;
-    flex-direction: column;
-    width: 99%;
-    height: auto;
 
-}
-.highlight_item {
+.contentItem {
     display: flex;
-    
-    width: 90%;
-    margin: 0.5%;
-    height: auto;
-    justify-content: center;
-    align-items: center;
-    border-radius: 25px;
-    border: 2px solid whitesmoke;
+    width: 96%;
+    margin: 1%;
+    background-color: rgba(43, 43, 43, 0.15);
+    padding: 1%;
+    border-radius: 15px;
 
-    padding: 20px;
+    position: absolute;
+    z-index: 1;
 }
-.highlight_title {
-    display: flex;
-    padding: 10px;
+.description {
+    width: 95%;
+    justify-content: center;
+    font-size: larger;
+}
+.info {
+    color: rgb(192, 192, 192);
+}
+.infoTitle {
+    color: white;
 }
 .blueLine {
     height: 5px;
     background-color: rgb(0, 0, 63);
-}
-.description {
-    width: 50%;
 }

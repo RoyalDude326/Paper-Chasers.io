@@ -103,6 +103,8 @@ header {
 footer {
     display: flex;
     background-color: rgba(0, 0, 0);  
+    flex-direction: column;
+    font-size: xx-large;
 }
 .footerItem {
     display: flex;
