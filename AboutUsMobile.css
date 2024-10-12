@@ -49,6 +49,25 @@ body {
 
     z-index: 5;
 }
+.background2 {
+    /* The image used */
+    background-image: url("images/Adnan-Cigar.jpg");
+
+  /* Add the blur effect */
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+
+  /* Full height */
+    height: 100%;
+    min-height: 500px;
+
+  /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    z-index: 5;
+}
 .content {
     display: flex;
     flex-direction: column;
