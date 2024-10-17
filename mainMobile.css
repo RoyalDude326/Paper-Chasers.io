@@ -54,7 +54,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 800px;
+    height: 1200px;
 }    
 .contentRow {
     display: flex;
@@ -69,14 +69,14 @@ body {
 .contentRowIn {
     display: flex;
     flex-direction: column;
-    width: 99%;
+    width: 100%;
     height: auto;
 
 }
 .highlight_item {
     display: flex;
     
-    width: 90%;
+    width: 88%;
     margin: 0.5%;
     height: auto;
     justify-content: center;
@@ -84,7 +84,7 @@ body {
     border-radius: 25px;
     border: 2px solid whitesmoke;
 
-    padding: 20px;
+    padding: 50px;
 }
 .highlight_title {
     display: flex;

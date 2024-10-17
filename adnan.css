@@ -55,6 +55,9 @@ body {
     margin-right: 25px;
     margin-left: 1%;
 }
+.background1 {
+    display: none;
+}
 .content {
     display: flex;
     width: 100%;

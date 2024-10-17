@@ -33,6 +33,7 @@ body {
 header {
     background-color: rgb(0, 0, 0);
     display: flex;  
+    flex-direction: column;
 }
 .logo {
     width: 22%;
@@ -43,7 +44,7 @@ header {
 }
 .right {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin-left: auto; 
     margin-left: 1%;
 }
@@ -61,21 +62,25 @@ header {
 }
 .nav {
     display: flex;
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: 40%;
+    flex-direction: row;
+    margin-right: 0;
     margin-top: 20px;
+    width: 100%;
+    align-items: center;
 }
-.navHolder1 {
+.navHolder {
     display: flex; 
+    align-items: center;
+    margin-left: 10%;
 }
 .navigation1 {
     display: flex;
     margin: 1%;
-    margin-left: 30px;
     padding-left: 5px;
     min-width: 80px;
     border-left: 2px solid white;
+    font-size: x-large;
+    width: 100%;
 }
 .navigation1:hover {
     border-left: 2px solid red;
@@ -105,6 +110,7 @@ footer {
     background-color: rgba(0, 0, 0);  
     flex-direction: column;
     font-size: xx-large;
+    margin-top: auto;
 }
 .footerItem {
     display: flex;
@@ -115,9 +121,6 @@ footer {
     margin-right: 50px;
     padding-left: 15px;
     border-left: 4px solid rgba(7, 0, 0, 0.457);  
-}
-.footLink {
-    margin-bottom: 15px;
 }
 .socials {
     display: flex;
